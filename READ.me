@@ -1,0 +1,60 @@
+# API Testing Framework for Restful Booker
+
+This project is an API testing framework developed to test the Restful booker APIs. 
+It includes test cases for the following API endpoints:
+
+- CreateBooking
+- GetBooking
+- UpdateBooking
+- DeleteBooking
+
+The framework is built using Python and utilizes the `pytest` testing framework, 
+`requests` library for API requests, and follows a modular structure to ensure clean and organized code.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Prerequisites] 
+	Install all requirements
+	pip install -r requirements.txt
+
+- [Installation]
+	Update the configuration:
+		Open the config.py file.
+		Replace BASE_URL with the base URL of the Restful booker API.
+		Replace AUTH_TOKEN with your authentication token.
+	Define test data:
+		In the api_library.py file, update the BOOKING_DATA dictionary with appropriate booking data for testing.
+		
+- [Running Tests
+	After configuring the framework, run the test suite using the pytest command as shown in the installation steps.
+- [Reports]
+	The reports are generated using the pytest-html plugin
+- [Tools and Frameworks]
+	Python: Main programming language for test script development.
+	pytest: Testing framework for organizing and executing tests.
+	requests: Library for making API requests.
+	pytest-html: Plugin for generating HTML reports from test results.
+- [Assumptions]
+	The Restful booker API base URL and authentication token are configured in the config.py file.
+	The API library functions encapsulate the actual API requests and return requests.Response objects.
+	Test data and payloads are provided for each test scenario.
+- [Contact]
+	sauravnitmn@gmail.com
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- `pip` package manager
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/api-testing-framework.git
+	cd api-testing-framework
+	pip install -r requirements.txt
+	pytest test_api_framework.py
